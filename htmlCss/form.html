@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+     <form method="post" action="index.html">
+        <div>
+        <label for="name">Name</label>
+        <input id="name"type="text"placeholder="Enter your name" required autofocus>
+        </div>
+
+        <div>
+        <label for="pass">Password</label>
+        <input id="pass"type="password"placeholder="Enter your password" required>
+        </div>
+
+<div>
+        <label for="email">Email</label>
+        <input id="email"type="email"placeholder="Enter your email" required>
+</div>
+
+<div>
+        <label>Gender</label>
+        <input type="radio" name="gen" value="Male">Male
+        <input type="radio" name="gen" value="Female">Female
+        <input type="radio" name="gen" value="Other">Other
+</div>
+<div>
+        <label for="Hobbies"></label>
+        <input type="checkbox" value="Read">Reading
+        <input type="checkbox" value="travel">Traveling
+        <input type="checkbox" value="learn">Learning
+        <input type="checkbox" value="sleep">Sleeping
+</div>
+
+<div>
+        <label for="city">City</label>
+
+<select name="city" id="city" required>
+
+   <!-- we use many things in select like multiple  -->
+
+<option value="" disabled selected >select your city</option>
+<option value="faridabad">faridabad</option>
+<option value="palwal">Palwal</option>
+<option value="delhi">delhi</option>
+<option value="mathura">mathura</option>
+<option value="ballabhgarh">Ballabhgarh</option>
+<option value="Hodal">Hodal</option>
+
+</select>
+ </label>
+</div>
+
+<div>
+        <label for=" address">Address</label>
+        <textarea name="address" id="address" placeholder="Address" cols="25" rows="3" required></textarea>
+</div>
+
+<div>
+        <label for="color">choose color</label>
+        <input type="color">
+</div>
+
+<div>
+        <label for="number">select Your Age</label>
+        <input type="number" placeholder="Enter Your Age" min="1" max="100" step="" required>
+</div>
+
+<div>
+        <label for="date">DOB</label>
+        <input type="date" required>
+</div>
+
+<div>
+        <label for="">Price Range</label>
+        <input type="range" min="100" max="10000" step="50" required>
+</div>
+
+<div>
+        <label for="">Resume</label>
+        <input type="file">
+</div>
+
+<button type="submit">Register</button>
+<button type="reset">reset</button>
+
+     </form>
+</body>
+</html>
